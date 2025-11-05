@@ -24,7 +24,7 @@ const handleScroll = () => {
         <div class="navbar-icon">
           <a href="/" class="logo-link">
             <img class="logo" src="/zoometrica.png" alt="Logo">
-            <p>Зоометрика</p>
+            <p>ЗооМетрика</p>
           </a>
         </div>
         <div class="navbar-navigation">
@@ -37,8 +37,8 @@ const handleScroll = () => {
     <div class="header">
       <div class="header-content">
         <div class="header-block">
-          <h1 class="header-title">Зоометрика</h1>
-          <p>Зоометрика – ваш ключ к здоровому стаду и эффективному животноводству. Мы применяем IoT-решения и глубокую аналитику для раннего выявления проблем, снижая потери и заботясь о комфорте животных.</p>
+          <h1 class="header-title">ЗооМетрика</h1>
+          <p>ЗооМетрика – ваш ключ к здоровому стаду и эффективному животноводству. Мы применяем IoT-решения и глубокую аналитику для раннего выявления проблем, снижая потери и заботясь о комфорте животных.</p>
         </div>
       </div>
     </div>
@@ -138,18 +138,23 @@ const handleScroll = () => {
             </div>
           </div>
         </div>
-        <div class="team">
-          <div class="team-title">
-            <h1>Приложения</h1>
+        <a href="https://share.proto.io/K0Q1TJ/" class="app">
+          <div class="app-items">
+            <div class="app-preview">
+              <img src="/app-preview.png" class="app-preview-icon"></img>
+            </div>
+            <div class="app-preview-text">
+              <h3>ЗооМетрика</h3>
+              <p>Попробуйте прямо сейчас.</p>
+            </div>
           </div>
-          <p>Файлы и другая полезная информация</p>
-        </div>
+        </a>
       </div>
     </div>
     <div class="footer">
       <div class="footer-content">
         <a href="/" class="logo-link">
-          <p>Зоометрика</p>
+          <p>ЗооМетрика</p>
         </a>
         <!-- <div class="footer-socials">
           <a href="#" class="" >
@@ -162,6 +167,45 @@ const handleScroll = () => {
 </template>
 
 <style scoped>
+.app-preview-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  height: 100%;
+
+  h3 {
+    font-size: 3rem;
+    margin: 0;
+    font-weight: 600;
+  }
+
+  p {
+    font-size: 1.5rem;
+  }
+}
+
+.app-preview-icon {
+  width: 256px;
+}
+
+.app-items {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  cursor: pointer;
+}
+
+.app {
+  padding-top: 128px;
+  padding-bottom: 128px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
 .path h1 {
   text-align: left;
   margin-bottom: 40px;
